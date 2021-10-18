@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Laboratorio10"
+             x:Class="Laboratorio10.ListViewDemo"
+             Background="#030e48">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal" Padding="20">
+            <ListView ItemsSource="{x:Static local:NamedColor.All}"            >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Label Text="{Binding FriendlyName}"
+                                       Padding="12"
+                                       TextColor="#fff"/>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Laboratorio10.MainPage">
+
+    <StackLayout
+        Padding="20"
+        BackgroundColor="#030e48">
+        <Image Source="xamari.png"></Image>
+        <Label
+            Text="Laboratorio09"
+            TextColor="#fff"
+            FontSize="20"
+            HorizontalTextAlignment="Center"/>
+        <Label 
+            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+            TextColor="#fff"
+            ></Label>
+
+        <StackLayout Margin="0, 20, 0, 0">
+            <Button x:Name="Item1" Text="ViewToViewDemo" Background="#d90429" TextColor="#fff"  CornerRadius="5" HorizontalOptions="Center" WidthRequest="160"></Button>
+            <Button x:Name="Item2" Text="BindingModeDemo" Background="#d90429" TextColor="#fff"  CornerRadius="5" HorizontalOptions="Center" WidthRequest="160" ></Button>
+            <Button x:Name="Item3" Text="ListViewDemo" Background="#d90429" TextColor="#fff"  CornerRadius="5" HorizontalOptions="Center" WidthRequest="160" ></Button>
+            <Button x:Name="Item4" Text="PickerDemo" Background="#d90429" TextColor="#fff"  CornerRadius="5" HorizontalOptions="Center" WidthRequest="160"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
